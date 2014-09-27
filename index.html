@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Weatherboss</title>
+    <title>WEATHER BOSS</title>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" type="text/css">
@@ -9,14 +9,15 @@
 </head>
 <body>
 <div class="container">
-    <h1>WEATHER <span style="color: #3656ba;">BOSS</span></h1>
-    <p>Keeping dat weather under control.</p>
+    <header>
+        <h1>WEATHER <span style="color: #3656ba;">BOSS</span></h1>
+        <p>Keeping dat weather under control.</p>
+    </header>
     <div id="search">
         <input type="text" id="location" placeholder="Weather for..."/>
         <button onclick="search()" id="searchBtn">Get weather</button>
     </div>
     <div id="results"></div>
 </div>
-
 </body>
 </html>

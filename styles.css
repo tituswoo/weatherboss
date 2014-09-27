@@ -2,9 +2,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1, p {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
 .container {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     text-align: center;
 }
 
@@ -31,4 +39,8 @@ body {
 #searchBtn:hover {
     cursor: pointer;
     background-color: #3656ba;
+}
+
+#results {
+    margin-top: 10px;
 }
