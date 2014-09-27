@@ -3,13 +3,20 @@
     <meta charset="UTF-8">
     <title>Weatherboss</title>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="app.js"></script>
 </head>
 <body>
-<h1>Weatherboss</h1>
-<p>Keeping dat weather under control.</p>
-<input type="text" id="location"/>
-<button onclick="search()">Search</button>
-<div id="result"></div>
+<div class="container">
+    <h1>WEATHER <span style="color: #3656ba;">BOSS</span></h1>
+    <p>Keeping dat weather under control.</p>
+    <div id="search">
+        <input type="text" id="location" placeholder="Weather for..."/>
+        <button onclick="search()" id="searchBtn">Get weather</button>
+    </div>
+    <div id="results"></div>
+</div>
+
 </body>
 </html>
