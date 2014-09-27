@@ -1,7 +1,6 @@
 var BASE_URI = 'https://query.yahooapis.com/v1/public/yql';
 
 var getLocation = function (query) {
-
     return $.get(BASE_URI, {
         q: "select * from geo.places where text='" + query + "' limit 1",
         format: "json",
@@ -37,8 +36,8 @@ var displayWeather = function (result) {
     // Let's actually show it on the page now:
     $("#results")
         .html("")
-        .append("<h2>"+channel.title+"</h2>")
-        .append("<h3> It's "+channel.item.condition.temp+units.temperature+" right now.</h3>")
+        .append("<h2>" + channel.title + "</h2>")
+        .append("<h3> It's " + channel.item.condition.temp + units.temperature + " right now.</h3>")
         .append("<p>Wind chill: " + channel.wind.chill + units.temperature + ", direction: " + channel.wind.direction + "</p>")
         .append("<h3>5 day forecast:</h3>");
 
@@ -63,8 +62,8 @@ function search() {
     });
 }
 
-$(document).ready(function() {
-    $("#location").keypress(function(e) {
+$(document).ready(function () {
+    $("#location").keypress(function (e) {
         if (e.which == 13) {
             search();
         }

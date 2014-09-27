@@ -11,12 +11,11 @@ header {
 }
 
 .container {
-    margin: 0 auto;
-    width: 600px;
+    width: 100%;
     text-align: center;
 }
 
-#search > #location, #search > #searchBtn{
+#search > #location, #search > #searchBtn {
     padding: 10px;
     font-size: 20px;
     outline: none;
